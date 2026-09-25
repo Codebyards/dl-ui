@@ -978,6 +978,23 @@ module.exports = [
       iconClass: "fa fa-clone",
     },
   },
+
+  {
+    route: "garment-daily-purchase-order-new/reports",
+    name: "garment-daily-purchase-order-report-new",
+    moduleId:
+      "./modules/accounting/reports/garment-daily-purchase-report-new/index",
+    nav: true,
+    title: "Laporan Buku Harian Pembelian - New| Garment",
+    auth: true,
+    settings: {
+      group: "g-purchasing",
+      subGroup: "laporan",
+      // permission: { "B1": 1, "C9": 1 },
+      permission: { H49: 1 },
+      iconClass: "fa fa-clone",
+    },
+  },
   {
     route: "garment-purchase-order/purchase-book-report",
     name: "garment-purchasing-book-report",
